@@ -1,0 +1,25 @@
+package sparta;
+
+public class Sparta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+			int a[]= {70,20,130,40,150,60};
+			int res=largest(a,a.length);
+			System.out.println(res);
+		}
+		
+	public static int largest(int x[],int n) {
+		int max=x[0];	
+		for(int i=1;i<n;i++) {
+			if(x[i]>max) {
+				max=x[i];
+			}
+		}
+		return max;
+	}
+	
+	}
+	
+
