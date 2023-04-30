@@ -1,0 +1,35 @@
+package sparta;
+
+public class Sparta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+			int a[]= {10,20,30,40,50};
+			
+			System.out.println("Initial array:");
+			for(int i=0;i<a.length;i++) {
+				System.out.print(a[i]+" ");
+			}
+			
+			int f=0;
+			int l=a.length-1;
+			while(f<=l) {
+				int temp=a[f];
+				a[f]=a[l];
+				a[l]=temp;
+				f++;
+				l--;
+			}
+			
+			System.out.println("\nReversed array:");
+			for(int i=0;i<a.length;i++) {
+				System.out.print(a[i]+" ");
+			}
+
+		}
+		
+	
+}
+	
+
