@@ -1,0 +1,31 @@
+package sparta;
+
+public class Sparta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+			int a[]= {50,40,30,45,46,55};
+			int res=second_largest(a,a.length);
+			System.out.println(res);
+		}
+		
+	public static int second_largest(int x[],int n) {
+		int sl=-1;
+		int l=0;
+		for(int i=1;i<n;i++) {
+			if(x[i]>x[l]) {
+				sl=l;
+				l=i;
+			}
+			else if(sl==-1 || x[i]>x[sl]) {
+				sl=i;
+			}
+		}
+		return x[sl];
+
+	}
+	
+}
+	
+
