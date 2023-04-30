@@ -1,0 +1,22 @@
+package sparta;
+
+public class Sparta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int s=digit(12);
+		
+		System.out.println(s);
+	}
+	
+	public static int digit(int x) {
+		int c=0;
+		while(x>0) {
+			x=x/10;
+			c++;
+		}
+		return c;
+	}
+
+}
