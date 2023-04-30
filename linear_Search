@@ -1,0 +1,25 @@
+package sparta;
+
+public class Sparta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			
+			int a[]= {10,20,30,40,50,60};
+			int res=search(a,a.length,60);
+			System.out.println(res);
+		}
+		
+	public static int search(int x[],int n,int k) {
+			
+		for(int i=0;i<n;i++) {
+			if(k==x[i]) {
+				return i;
+			}
+		}
+		return 0;
+	}
+	
+	}
+	
+
